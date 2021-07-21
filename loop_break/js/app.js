@@ -3,7 +3,7 @@ let message = 'Liftoff! 🚀';
 
 for ( let i = tMinus; i >= 1; i--) {
     let status = prompt(`T-Minus ${i}... Continue? (Y/N)`);
-    if ( status === null || status.toLocaleLowerCase() === 'n') {
+    if ( status === '' || status.toLocaleLowerCase() === 'n') {
         message = 'Abort Launch!';
         break;
     }
