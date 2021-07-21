@@ -26,5 +26,13 @@ while ( i < 10 ) {
 
 document.querySelector('.section_2').innerHTML = msg;
 
+// for loop
 
+function getRandomNumber(upper) {
+    return Math.floor( Math.random() * upper ) + 1;
+}
+for( let i = 0; i< 10; i++ ) {
+    document.querySelector('.section_3').innerHTML = `Your random number is ${getRandomNumber(10)}`;
+}
 
+added
