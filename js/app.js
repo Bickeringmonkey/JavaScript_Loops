@@ -17,10 +17,14 @@ document.querySelector('.section_1').innerHTML = message;
 
 var i = 1;
 var msg = '';
+const amount = prompt("What number would you like to times?");
 
 while ( i < 10 ) {
-    msg += i + ' x 5 = ' + (i * 5) + '<br/>';
+    msg += i + ' x ' + amount+' = ' + (i * amount) + '<br/>';
     i++;
 }
 
 document.querySelector('.section_2').innerHTML = msg;
+
+
+
